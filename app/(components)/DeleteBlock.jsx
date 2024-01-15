@@ -8,7 +8,7 @@ const DeleteBlock = ({ id }) => {
   const router = useRouter();
 
   const deleteTicket = async () => {
-    const res = await fetch(`http://localhost:3001/api/Tickets/${id}`, {
+    const res = await fetch(`https://ticket-system-uz.netlify.app/api/Tickets/${id}`, {
       method: "DELETE",
     });
     if (res.ok) {
